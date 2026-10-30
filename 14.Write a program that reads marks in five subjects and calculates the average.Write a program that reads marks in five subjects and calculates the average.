@@ -1,0 +1,11 @@
+marks = []
+
+for i in range(5):
+    marks.append(int(input()))
+
+avg = sum(marks) / 5
+
+if avg.is_integer():
+    print(int(avg))
+else:
+    print(f"{avg:.2f}")
